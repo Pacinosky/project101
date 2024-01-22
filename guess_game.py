@@ -3,19 +3,22 @@ from random import *
 #the secret number is 9 
 #user is asked to enter a number 3 times
 #if user guess correctly game is ended
-number=9
-count=0
-limit=3
-while count<limit :
+secret_number=9
+guess_count=0
+guess_limit=3
+while guess_count<guess_limit :
     guess=int(input('enter a number: '))
-    count+=1
-    if guess == number:
+    guess_count+=1
+    
+    #condition if user guess is equal to secret number
+    if guess == secret_number:
         print('you guessed corrected')
         print('You won, game ended')
         break
-
+    #if user guess wrongly ,let user guess again. 
+    #user has only 3 tries
     else:
-        print('try again')
-print(f'you guessed {count} times')
+        print('you guessed wrongly, Try again!!!')
+print(f'you guessed {guess_count} times')
 
 

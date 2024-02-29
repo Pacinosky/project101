@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main{
+    position: relative;  
+    width: 100%;
+    height: 100vh;
+    background:burlywood ;
+}
+
+nav{
+    display:flex;
+    width: 85%;
+    margin:auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resize{
+    width: 250px;
+    height: 100px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li a:hover{
+    color:crimson;
+}
+
+.submain{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.submain h1{
+    font-size: 50px;
+    color:black;
+    margin-bottom: 10px;
+}
+
+span{
+    color:black;
+    font-style: italic;
+}
+
+.submain p{
+    color:#555;
+    line-height: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;    
+    padding-left: 0%;
+    font-weight: bold;
+}
+
+.submain a{
+    background: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    color:wheat;
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+}
+
+.image img{
+    height: 80%;
+    position: relative;
+    top: 20%;
+    bottom: 0;
+    left: 250px;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+
+.image:hover .pic1{
+    right: 45%;
+
+}

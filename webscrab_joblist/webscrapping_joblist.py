@@ -57,7 +57,7 @@ print your results
         
         locate_Job=job.find('span', property="jobLocation").span.text
         if find_myCity in locate_Job:
-            with open(f'webscrab_joblist/{index}.txt', 'w') as f:
+            with open(f'webscrab_joblist/posts/{index}.txt', 'w') as f:
         #set up condition to search for the location of the job 
         #save into a file 
                 f.write(f'Job Title : {jobTitle} \n')
